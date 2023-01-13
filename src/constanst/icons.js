@@ -1,0 +1,21 @@
+export default {
+card:require('../asstes/Icon/shopping-cart.png'),
+map:require('../asstes/Icon/mappp.png'),
+ flover:require('../asstes/Image/flover.jpg'),
+ lalachili:require('../asstes/Image/lalachili.jpg'),
+ fershfarute:require('../asstes/Image/fershfarute.jpg'),
+ referandern:require('../asstes/Image/referandern.jpeg'),
+ ifersh:require('../asstes/Image/ifersh.png'),
+ mixxxvagitable:require('../asstes/Image/mixxxvagitable.jpeg'),
+ darairy:require('../asstes/Image/darairy.png'),
+ fershvagitables:require('../asstes/Image/fershvagitables.jpg'),
+ rrffern:require('../asstes/Image/rrffern.jpg'),
+ mirch:require('../asstes/Image/mirch.jpg'),
+ canda:require('../asstes/Image/canda.jpg'),
+ harakanda:require('../asstes/Image/harakanda.jpg'),
+ heart:require('../asstes/Icon/heart.png'),
+ shoppingbag:require('../asstes/Icon/bag.png'),
+ menu:require('../asstes/Icon/menu.png'),
+ home:require('../asstes/Icon/menu.png'),
+ 
+}
