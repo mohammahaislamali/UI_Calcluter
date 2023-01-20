@@ -3,10 +3,10 @@ import React from 'react';
 import colors from '../constanst/colors';
 import Icon from '../componet/Ui/Icon';
 import icons from '../constanst/icons';
-import Home from '../screen/before_login/Home';
+import Listdata from '../screen/before_login/Listdata';
+import Dtl from '../screen/before_login/Dtl';
+import Faverate from '../screen/before_login/Faverate';
 import Cart from '../screen/before_login/Cart';
-import Favourite from '../screen/before_login/Favourite';
-import Category from '../screen/before_login/Category'
 const Tab = createBottomTabNavigator();
 
 const BottumTab=()=> {
@@ -17,13 +17,13 @@ const BottumTab=()=> {
        tabBarActiveTintColor:colors.grayligth,
       tabBarActiveBackgroundColor:colors.green,
      tabBarInactiveBackgroundColor:colors.green,
-     
+     tabBarHideOnKeyboard:true
       }}
     >
       <Tab.Screen
   
-        name="Home"
-        component={Home}
+        name="Listdata"
+        component={Listdata}
         options={{ headerShown: false,
           tabBarLabel: 'Home',
          
@@ -33,8 +33,8 @@ const BottumTab=()=> {
         }}
       />
        <Tab.Screen
-        name="Category"
-        component={Category}
+        name="Dtl"
+        component={Dtl}
         options={{
           headerShown: false,
           tabBarLabel: 'Category',
@@ -45,27 +45,27 @@ const BottumTab=()=> {
         }}
       />
       <Tab.Screen
-        name="Favourite"
-        component={Favourite}
+        name="Faverate"
+        component={Faverate}
         options={{
           headerShown: false,
-          tabBarLabel: 'Favorite',
+          tabBarLabel: 'Faverate',
           tabBarIcon: ({ color, size }) => (
             <Icon  tintColor={colors.grayligth} source={icons.heart} />
           ),
         }}
       />
-        <Tab.Screen
-        name="Cart"
-        component={Cart}
+      <Tab.Screen
+       name="Cart"
+       component={Cart}
         options={{
           headerShown: false,
           tabBarLabel: 'Cart',
           tabBarIcon: ({ color, size }) => (
-            <Icon  tintColor={colors.grayligth} source={icons.shoppingbag} />
+            <Icon  tintColor={colors.grayligth} source={icons.cart} />
           ),
         }}
-      /> 
+      />  
     </Tab.Navigator>
   );
 }

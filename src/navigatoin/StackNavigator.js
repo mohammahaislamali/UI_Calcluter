@@ -23,39 +23,53 @@ const StackNavigator = () => {
             screenOptions={{
                 // your stack style
             }}
-          initialRouteName='SingUp' >
-          
+          initialRouteName='BottumTab' >
+               <Screen
+                name='BottumTab'
+                // use getComponent instead of component for better speed 
+                getComponent={() => require('../navigatoin/BottumTab').default}
+            
+                options={{
+                    ...commonOptions
+                }} 
+            />
+             <Screen
+                name='Listdata'
+                // use getComponent instead of component for better speed 
+                getComponent={() => require('../screen/before_login/Listdata').default}
+            
+                options={{
+                    ...commonOptions
+                }} 
+            />
+                <Screen
+                name='Dtl'
+                // use getComponent instead of component for better speed 
+                getComponent={() => require('../screen/before_login/Dtl').default}
+            
+                options={{
+                    ...commonOptions
+                }} 
+            />
           <Screen
-                name='Home'
+                name='Faverate'
                 // use getComponent instead of component for better speed 
-                getComponent={() => require('../screen/before_login/Home').default}
+                getComponent={() => require('../screen/before_login/Faverate').default}
             
                 options={{
                     ...commonOptions
                 }} 
             />
-         
               <Screen
-                name='Login'
+                name='Cart'
                 // use getComponent instead of component for better speed 
-                getComponent={() => require('../screen/after_login/Login').default}
-            
-                options={{
-                    ...commonOptions
-                }} 
-            />  
-                 <Screen
-                name='SingUp'
-                // use getComponent instead of component for better speed 
-                getComponent={() => require('../screen/after_login/SingUp').default}
+                getComponent={() => require('../screen/before_login/Cart').default}
             
                 options={{
                     ...commonOptions
                 }} 
             />
-          
-             
-        
+   
         </Navigator>
     )
 }
